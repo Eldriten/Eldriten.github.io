@@ -1,0 +1,388 @@
+*, 
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Nous commençons le début des éléments commun.*/
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+img {
+	max-width : 100%;
+	height: auto;
+}
+
+body {
+	font-family: Arial, sans-serif;
+
+}
+
+nav {
+	position: fixed; 
+	top: 10rem; 
+	right: 0;
+}
+
+id {
+	
+}
+
+ul {
+list-style : circle inside;
+margin-left: 1rem;
+}
+
+a { 
+	color: #9c27b0; 
+	text-decoration: none;
+}
+
+a:hover { 
+	color: #f44336; 
+	text-decoration: underline; 
+}
+
+/* Nous commençons le header ici.*/
+
+.page-header {
+    max-width: 80rem;
+	margin-top : 1rem;
+	margin-left : auto;
+	margin-right : auto;
+	margin-bottom : 1rem;
+	border-bottom: 5px solid #f42e2e;
+	padding-top: 1rem; 
+	padding-bottom: 1rem;
+}
+
+.header-title {
+	color : #000;
+}
+
+.header-subtitle {
+	color : #00489e;
+}
+
+/* Nous commençons le contenu principal ici.*/
+
+.main-container  {
+    max-width: 80rem;
+    margin-top : 1rem;
+    margin-left : auto;
+    margin-right : auto;
+    margin-bottom : 1rem;
+    display:flex;
+	flex-direction : row-reverse;
+}
+
+/* Nous commençons le aside ici.*/
+
+
+.aside {
+    flex-basis: 25%;
+    border-right: 3px solid #f42e2e;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.aside-contact {
+	background-color: #0074ff;
+	color: #fff;
+	border: 1px solid #0074ff;
+	display: block;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	text-align: center;
+	text-decoration: none;
+	margin: 1rem;
+	transition: color 2s;
+	margin-bottom : 1rem;
+}
+
+.aside-photo {
+	display: block;
+	margin-right: auto; 
+	margin-left: auto;
+}
+
+.aside-contact:hover{
+	background-color: #fff;
+	color: #0074ff;
+	border : #fff;
+}
+
+.aside-contact:before{ 
+	content:''; 
+	display: inline-block;
+	background: transparent url(../images/message.svg) center no-repeat;
+	width: 1.5rem;
+	height: 1.5rem; 
+	background-size: contain;
+	margin-right:1.2rem;
+}
+
+.aside-informations {
+	margin-bottom: 1rem; 
+	color: #666; 
+	text-transform: uppercase; 
+	font-size: .8rem;
+}
+
+.aside-title {
+	 font-family: 'Crimson Pro', serif; 
+	 font-weight: normal; 
+	 color: #f44336;
+	 text-transform: uppercase; 
+	 margin-bottom: .5rem;
+}
+
+.aside-networks {
+	list-style: none inside;
+	margin-left: 0;
+}
+
+.aside-networks-link { 
+	padding: .25rem .5rem; 
+	display: flex; 
+	align-items: center; 
+}
+
+.aside-networks-link:before {
+	content:''; 
+	display: inline-block; 
+	margin-right: .25rem; 
+	width: 1.25rem; 
+	height: 1rem; 
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: contain;
+	background-color: transparent; 
+}
+
+.aside-networks-link-facebook:before { 
+	background-image: url(../images/facebook.svg);
+}
+
+.aside-networks-link-twitter:before { 
+	background-image: url(../images/twitter.svg);
+}
+
+.aside-networks-link-linkledin:before { 
+	background-image: url(../images/linkledin.svg);
+}
+
+/* Nous commençons le content ici.*/
+
+.content {
+	flex-basis: 75%; 
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+
+/* Nous commençons la partie formations/experiences.. ici */
+
+.informations-title{
+	font-family: 'Crimson Pro', serif;
+	font-size: 45px;
+	color: #090085;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+}
+
+.informations-details-title {
+	font-weight: normal;
+	font-family: 'Crimson Pro', serif;
+	font-size: 1.6rem;
+}
+
+.informations-details-employer {
+	font-weight: bold; 
+	margin-bottom: 0.6rem;
+	color : #090085;
+}
+
+.informations-details-date {
+	font-style: italic;
+	margin-bottom: 1rem;
+	color : #090085;
+}
+
+.informations-employer {
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,.5);
+	margin: 1rem; 
+	padding: 1rem;
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.informations-employer-name {
+	flex: 0 0 100%; 
+	color: #360274;
+	font-weight: bold;
+}
+
+.informations-employer-details {
+	flex : 0 0 33.33%;
+}
+
+.informations-details:after {
+	content:''; 
+	display: inline-block;
+	width: 10rem;
+	height: 0.5rem; 
+	background-size: contain;
+	margin-right:1.2rem;
+	border-top : 1px solid #ccc;
+}
+
+ .informations-employer-details-link {
+	 display: flex;
+	 align-items: center;
+	 padding : 0.2rem;
+ }
+ 
+.informations-employer-details-link:before { 
+	content:''; 
+	display: inline-block; 
+	width: 1rem; 
+	height: 1rem; 
+	margin-right: .5rem; 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	background-size: contain; 
+	background-color: transparent; 
+	background-image: url(../images/click.svg);
+} 
+
+.informations-employer-details-link-facebook {
+	 display: flex;
+	 align-items: center;
+	 padding : 0.2rem;
+ }
+
+ .informations-employer-details-link-facebook:before { 
+	content:''; 
+	display: inline-block; 
+	width: 1rem; 
+	height: 1rem; 
+	margin-right: .5rem; 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	background-size: contain; 
+	background-color: transparent; 
+	background-image: url(../images/facebook.svg);
+} 
+
+.informations-employer-details-phone {
+	 color: #000; 
+	 font-size: 2rem; 
+	 font-family: 'Crimson Pro', serif; 
+	 font-weight : bold;
+}
+
+
+/* Nous allons commencez la partie menu-sticky ici. */ 
+
+.menu-sticky-item { 
+	list-style: inside; 
+	margin: 0;
+	list-style: none;
+	position: relative;
+	height: 3rem;
+}
+
+.menu-sticky-icon {
+	background-color: #00489e; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: contain; 
+	width: 3rem; 
+	height: 3rem; 
+	display: inline-block; 
+	margin-right: .5rem; 
+	border: 8px solid #00489e; 
+}
+
+.menu-sticky-icon-experiences {
+	background-image: url(../images/experience.svg); 
+}
+
+.menu-sticky-icon-formations {
+	background-image: url(../images/formation.svg); 
+}
+
+.menu-sticky-icon-competences {
+	background-image: url(../images/competences.svg); 
+}
+
+.menu-sticky-icon-loisirs {
+	background-image: url(../images/loisirs.svg); 
+}
+
+.menu-sticky-link {
+	background-color: #8a00a2;  
+	display: flex; 
+	align-items: center; 
+	padding-right: 1rem; 
+	width: 13rem; 
+	position: absolute; 
+	top: 0;
+	left: -3rem; 
+} 
+
+.menu-sticky-link:hover { 
+	color: #fff; 
+	left: -13rem;  
+} 
+
+.menu-sticky-link:hover .menu-sticky-icon{ 
+	background-color: #b400d4;
+	border-color: #ae00cd; 
+}
+
+/* Nous préparons ici la classe Compétences */ 
+
+.progress-container {
+	width : 10rem;
+	height : 1rem;
+	display : inline-block; 
+	border : 1px solid #999999;
+	overflow:hidden;
+}
+
+.progress-bar {
+	display : block;
+	height : 1rem;
+	width : 50%;
+	background-color: #e5e5f7;
+	opacity: 0.7;
+	background-image: linear-gradient(to right, #0a13b7, #0a13b7 7px, #e5e5f7 7px, #e5e5f7 );
+	background-size: 14px 100%;
+}
+
+.informations-competences {
+	max-width : 50rem;
+	display : flex;
+	justify-content: space-between;
+	margin-top : .25rem;
+	margin-bottom : .25rem;
+}
+
+.progress-container:hover {
+	transform: scale(1.2);
+	transition: transform 2s;
+}
+
+/* Nous préparons ici les Loisirs*/
+
